@@ -4,6 +4,6 @@
 }
 
 .backcolor {
-  background-color: #7510F7;
+  background-color: var(--primary-color);
   color: white;
 }

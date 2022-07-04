@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import Avatar from '../../assets/male_avatar.svg';
+import { ReactComponent as Avatar } from '../../assets/male_avatar.svg';
 import { Skills } from '../../components/skills';
 
 export function Home() {
@@ -9,7 +9,7 @@ export function Home() {
       <div className='container'>
         <p className='title'>Olá, meu nome é Gabriel Back</p>
         <p className='subtitle'>Sou desenvolvedor Front-end & Back-end</p>
-        <img src={Avatar} alt='avatar' className='avatar'/>
+        <Avatar fill="var(--primary-color)" className="avatar" />
       </div>
       <div className='container backcolor text'>
         <div style={{ width: '50vw' }} className='text-center'>

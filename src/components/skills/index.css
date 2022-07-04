@@ -27,6 +27,7 @@
 
 .icon {
   width: 5rem;
+  height: 5rem;
   margin-top: 1rem;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .card .content .list-title {
-  color: #7510F7;
+  color: var(--primary-color);
   font-weight: bold;
 }
 

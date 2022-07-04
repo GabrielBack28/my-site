@@ -4,7 +4,7 @@ import { cardData } from './card-data';
 
 export interface CardProps {
   title: string;
-  svgImage: string;
+  SvgImage: any;
   imageAlt: string;
   description: string;
   languages: string[];
@@ -27,10 +27,11 @@ export function Skills() {
   );
 }
 
-function Card(props: CardProps) {
+function Card({SvgImage, ...props}: CardProps) {
   return (
     <div className='card'>
-      <img src={props.svgImage} className='icon' alt={props.imageAlt} />
+      {/* <img src={props.SvgImage  } className='icon' alt={props.imageAlt} /> */}
+      <SvgImage class='icon' fill="var(--primary-color)" />
       <h3>{props.title}</h3>
       <p className="text-center" >{props.description}</p>
       <div className='content'>
